@@ -1,4 +1,4 @@
-package papaya.in.notesappwithroom;
+package shiva.in.notesappwithroom;
 
 import org.junit.Test;
 

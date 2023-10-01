@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "papaya.in.notesappwithroom"
+        applicationId "shiva.in.notesappwithroom"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

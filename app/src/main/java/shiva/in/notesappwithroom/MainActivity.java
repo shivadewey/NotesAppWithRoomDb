@@ -1,4 +1,4 @@
-package papaya.in.notesappwithroom;
+package shiva.in.notesappwithroom;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
@@ -6,7 +6,6 @@ import androidx.room.Room;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import java.util.List;
 
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Database db = Room.databaseBuilder(getApplicationContext(),
-                Database.class, "mydb")
+                Database.class, "mydba")
                 .allowMainThreadQueries().build();
 
         DataDao dataDao = db.dataDao();
@@ -31,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         dataDao.insertData(new DataModel("Saurabh"));
 
         LiveData<List<DataModel>> list = dataDao.getData();
+
+
         Log.d("Shubham", "onCreate: "+list);
 
 //        TextView tv = findViewById(R.id.textView);
